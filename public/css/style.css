@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica sans-serif;
+    background-color: #0f0f0f;
+    color: #97a06b;
+}
+
+/* Navbar */
+
+#logo img {
+    height: 50px;
+}
+
+#navbar {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #848587;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size:22px;
+}
+
+#navbar ul li{
+    margin-left: 1em;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: #bf4432;
+}
+
+/* Container*/
+.container {
+    min-height: 60vh;
+    padding: 2em;
+}
+
+.message {
+  padding: 1em;
+  color: #0f0f0f;
+  background-color: #97a06b;
+  border: 1px soli d#848587;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto 2em;
+  max-width: 40%;
+}
+
+/* LOGIN E REGISTER */
+.auth-container {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 1em;
+    color: #848587;
+    border-left: 4px solid #848587;
+    padding: 0.3em;
+    width: 180px;
+  }
+  
+  .auth-container a {
+    color: #848587;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #848587;
+  }
+  
+  form input[type='submit'],
+  .btn {
+    background-color: transparent;
+    color: #848587;
+    border: 2px solid #848587;
+    padding: 0.5em 1.3em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  form input[type='submit']:hover,
+  .btn:hover {
+    background-color: #3d3d3e;
+    color: #97a06b;
+  }
+  
+
+/* Footer*/
+footer {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #848587;
+}
+footer span {
+    color: #bf4432;
+}
