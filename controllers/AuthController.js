@@ -34,7 +34,7 @@ module.exports = class AuthController {
             req.flash('message', 'Autenticação realizada com sucessso!');
 
             req.session.save(() => {
-                res.render('toughts/home');
+                res.redirect('/');
             })
         
     }
