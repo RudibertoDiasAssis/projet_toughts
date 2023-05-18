@@ -1,3 +1,4 @@
+const { raw } = require('mysql2');
 const Tought = require('../models/Tought');
 const User = require('../models/User');
 
@@ -68,6 +69,38 @@ module.exports = class ToughtController {
         } catch (error) {
             console.log(error)
         }
+
+    }
+
+    static async udpateTought(req, res) {
+        const id = req.params.id
+
+        const tought = await Tought.findOne({where:{id:id}, raw: true})
+
+        res.render('toughts/edit', {tought})
+
+    }
+
+    static async udpateToughtSave(req, res) {
+        
+        const id = req.body.id
+
+        const tought = {
+            title: req.body.title
+
+        }
+
+        try {
+            await Tought.update(tought, {where: {id : id}})
+            req.flash('message', 'Pensamento alterado com sucesso' )
+    
+            req.session.save(() => {
+                res.redirect('/toughts/dashbord')
+            })
+        } catch (error) {
+            console.log(error)
+        }
+
 
     }
 
