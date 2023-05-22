@@ -166,7 +166,7 @@
 }
 
 .tought-form-container a:hover {
-  color: #bf4432;
+  color: #848587;
 }
 
 .tought-form-container h1 {
@@ -194,7 +194,7 @@
 }
 
 .home-header span {
-  color: #f6982d;
+  color: #848587;
 }
 
 .home-header p {
@@ -207,7 +207,7 @@
 
 .home-header input {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #b4c948;
   padding: 0.5em;
   margin-right: 1em;
 }
@@ -217,7 +217,7 @@
 }
 
 .home-header input::placeholder {
-  color: #fff;
+  color: #b4c948;
 }
 
 .order-container {
@@ -230,7 +230,7 @@
 
 .order-container span {
   font-weight: bold;
-  color: #fff;
+  color: #848587;
 }
 
 .order-container form {
@@ -245,7 +245,7 @@
 
 .order-container button:hover,
 .order-container a:hover {
-  color: #f6982d;
+  color: #848587;
 }
 
 .order-container span,
@@ -255,7 +255,7 @@
 }
 
 .order-container i {
-  color: #f6982d;
+  color: #848587;
 }
 
 .toughts-container figure {
@@ -272,7 +272,7 @@
 }
 
 .toughts-container span {
-  color: #f6982d;
+  color: #848587;
 }
 
 /* Footer*/
@@ -285,5 +285,5 @@ footer {
 }
 
 footer span {
-    color: #bf4432;
+    color: #848587;
 }
